@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="{{ language }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV - {{ data.fullName }}</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.3; color: #333; background: white; }
+            .cv-container { max-width: 100%; margin: 0; padding: 18px; background: white; }
+            
+            /* Header - Optimized for space */
+            .cv-header { background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; padding: 20px; border-radius: 6px; margin-bottom: 15px; text-align: center; }
+            .cv-name { font-size: 18px; font-weight: bold; margin-bottom: 6px; }
+            .cv-title { font-size: 16px; opacity: 0.9; }
+            
+            /* Contact info - Compact layout */
+            .contact-info { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; align-items: center; justify-content: center; width: 100%; }
+            .contact-item { display: flex; align-items: center; gap: 4px; padding: 2px 0; }
+            .contact-icon { color: #3b82f6; font-size: 12px; width: 16px; text-align: center; flex-shrink: 0; }
+            .contact-value { color: #555; font-size: 11px; white-space: nowrap; }
+            .contact-separator { color: #ccc; margin: 0 2px; font-size: 10px; flex-shrink: 0; }
+            
+            /* Section typography - Reduced margins */
+            .section { margin-bottom: 12px; }
+            .section-title { font-size: 12px; font-weight: bold; color: #3b82f6; border-bottom: 1px solid #3b82f6; padding-bottom: 6px; margin-bottom: 12px; display: flex; align-items: center; gap: 4px; }
+            .section-icon { color: #3b82f6; font-size: 12px; }
+            
+            /* Content typography - Optimized spacing */
+            .profile-text { text-align: justify; margin-bottom: 12px; color: #555; font-size: 11px; line-height: 1.2; }
+            .experience-item, .project-item, .education-item { margin-bottom: 10px; padding: 8px 10px; border-left: 2px solid #3b82f6; background: #f8fafc; border-radius: 0 4px 4px 0; }
+            .item-header { margin-bottom: 4px; }
+            .item-title { font-size: 11px; font-weight: bold; color: #1f2937; margin-bottom: 2px; }
+            .item-subtitle { color: #6b7280; font-size: 11px; }
+            .item-bullets { list-style: none; margin-top: 4px; }
+            .item-bullets li { margin-bottom: 2px; padding-left: 14px; position: relative; font-size: 11px; line-height: 1.2; }
+            .item-bullets li:before { content: "•"; color: #3b82f6; font-weight: bold; position: absolute; left: 0; }
+            
+            /* Additional content - Compact */
+            .technologies { margin-top: 4px; font-style: italic; color: #6b7280; font-size: 11px; }
+            .skills { margin-top: 4px; color: #555; font-size: 11px; }
+            .languages { display: flex; gap: 15px; margin-top: 0; }
+            .language-item { display: flex; align-items: center; gap: 6px; font-size: 11px; }
+            
+            /* Page break control and PDF optimization */
+            .section { 
+                margin-bottom: 12px;
+            }
+            
+            /* Experience section - allow page breaks between items */
+            .experience-section { 
+                page-break-inside: auto;
+                break-inside: auto;
+                orphans: 2;
+                widows: 2;
+            }
+            
+            /* Prevent border cutting and ensure complete elements */
+            .experience-item, .education-item {
+                border-left: none;
+                background: #f8fafc;
+                border-radius: 0 4px 4px 0;
+                page-break-inside: avoid; 
+                break-inside: avoid;
+                margin-bottom: 8px; 
+                padding: 6px 8px; 
+                position: relative;
+                /* Control orphan and widow lines */
+                orphans: 4;
+                widows: 4;
+                /* Use border-image for robust page break handling */
+                border-image: linear-gradient(to bottom, #3b82f6 0%, #3b82f6 100%) 1;
+                border-left: 2px solid transparent;
+                background-clip: padding-box;
+            }
+            
+            /* Additional visual indicator that won't be cut */
+            .experience-item::after, .education-item::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background: #3b82f6;
+                z-index: 1;
+            }
+            
+            .item-header {
+                page-break-after: avoid;
+                break-after: avoid;
+            }
+            
+            .item-bullets {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+            
+            .skills-grid {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+            
+            /* Footer positioning - always at bottom of current page */
+            .footer {
+                position: relative;
+                margin-top: 15px;
+                padding-top: 8px;
+                border-top: none;
+                text-align: center;
+                color: #6b7280;
+                font-size: 10px;
+                font-style: italic;
+                page-break-inside: avoid;
+                break-inside: avoid;
+                /* Ensure footer is not attached to previous section */
+                clear: both;
+                display: block;
+            }
+            
+            /* Print optimization with page break control */
+            @media print { 
+                body { margin: 0; } 
+                .cv-container { padding: 18px; }
+                .cv-header { 
+                    margin-bottom: 8px; 
+                    padding: 12px;
+                    page-break-after: avoid;
+                    break-after: avoid;
+                }
+                .section { 
+                    margin-bottom: 12px;
+                }
+                
+                /* Experience section - allow page breaks between items in print */
+                .experience-section { 
+                    page-break-inside: auto;
+                    break-inside: auto;
+                }
+                .experience-item, .education-item { 
+                    margin-bottom: 10px; 
+                    padding: 8px 10px;
+                    page-break-inside: avoid;
+                    break-inside: avoid;
+                    position: relative;
+                    /* Use border-image for robust page break handling in print */
+                    border-image: linear-gradient(to bottom, #3b82f6 0%, #3b82f6 100%) 1;
+                    border-left: 2px solid transparent;
+                    background-clip: padding-box;
+                }
+                
+                /* Ensure pseudo-element works in print */
+                .experience-item::after, .education-item::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 2px;
+                    background: #3b82f6;
+                    z-index: 1;
+                }
+                .item-bullets li { margin-bottom: 2px; }
+                .technologies { margin-top: 4px; }
+                .skills { margin-top: 4px; }
+                .footer { 
+                    margin-top: 12px; 
+                    padding-top: 6px;
+                    page-break-inside: avoid;
+                    break-inside: avoid;
+                    /* Ensure footer is not attached to previous section in print */
+                    clear: both;
+                    display: block;
+                }
+                
+                /* Force page breaks at strategic points */
+                .experience-section { 
+                    page-break-before: auto;
+                    break-before: auto;
+                }
+                
+                /* Ensure contact info stays with header */
+                .contact-info {
+                    page-break-after: avoid;
+                    break-after: avoid;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cv-container">
+            <!-- Header -->
+            <div class="cv-header" style="page-break-after: avoid; break-after: avoid;">
+                <h1 class="cv-name">{{ data.fullName }}</h1>
+                <p class="cv-title">{{ data.degree }}</p>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="contact-info" style="page-break-after: avoid; break-after: avoid;">
+                <span class="contact-separator">&nbsp;</span>
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <span class="contact-value">{{ data.contact.email }}</span>
+                </div>
+                {% if data.contact.phone %}
+                <span class="contact-separator">&nbsp;</span>
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <span class="contact-value">{{ data.contact.phone }}</span>
+                </div>
+                {% endif %}
+                <span class="contact-separator">&nbsp;</span>
+                <div class="contact-item">
+                    <i class="fas fa-globe contact-icon"></i>
+                    <span class="contact-value">{{ data.contact.portfolio }}</span>
+                </div>
+                <span class="contact-separator">&nbsp;</span>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <span class="contact-value">{{ data.contact.linkedin }}</span>
+                </div>
+                <span class="contact-separator">&nbsp;</span>
+                <div class="contact-item">
+                    <i class="fab fa-github contact-icon"></i>
+                    <span class="contact-value">{{ data.contact.github }}</span>
+                </div>
+            </div>
+            
+            <!-- Profile -->
+            <div class="section" style="page-break-inside: avoid; break-inside: avoid;">
+                <h2 class="section-title">
+                    <i class="fas fa-user section-icon"></i>
+                    {% if language == 'en' %}Profile{% else %}Perfil{% endif %}
+                </h2>
+                <p class="profile-text">{{ profile_text | safe }}</p>
+                
+                <div class="technologies">
+                    <strong>{% if language == 'en' %}Key Skills:{% else %}Habilidades Clave:{% endif %}</strong>
+                    {% for skill in data.keySkills %}
+                        <code>{{ skill | convert_quotes_to_bold | safe }}</code>{% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            
+            <!-- Experience -->
+            <div class="section experience-section">
+                <h2 class="section-title">
+                    <i class="fas fa-briefcase section-icon"></i>
+                    {% if language == 'en' %}Experience{% else %}Experiencia{% endif %}
+                </h2>
+                {% for exp in data.experience %}
+                <div class="experience-item" style="page-break-inside: avoid; break-inside: avoid;">
+                    <div class="item-header">
+                        <div class="item-title">{{ exp.role | convert_quotes_to_bold | safe }} - {{ exp.company | convert_quotes_to_bold | safe }}</div>
+                        <div class="item-subtitle">
+                            <i class="fas fa-map-marker-alt" style="color: #3b82f6; margin-right: 5px;"></i>{{ exp.city | convert_quotes_to_bold | safe }}
+                            <span style="margin: 0 8px;">&nbsp;</span>
+                            <i class="fas fa-calendar-alt" style="color: #3b82f6; margin-right: 5px;"></i>{{ exp.period | convert_quotes_to_bold | safe }}
+                        </div>
+                    </div>
+                    <ul class="item-bullets">
+                        {% for bullet in exp.bullets %}
+                        <li>{{ bullet | safe }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% if exp.technologies %}
+                    <div class="technologies">
+                        <strong>{% if language == 'en' %}Technologies:{% else %}Tecnologías:{% endif %}</strong>
+                        {% for tech in exp.technologies %}
+                            <code>{{ tech | convert_quotes_to_bold | safe }}</code>{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            
+            <!-- Tech Skills -->
+            <div class="section" style="page-break-inside: avoid; break-inside: avoid;">
+                <h2 class="section-title">
+                    <i class="fas fa-bolt section-icon"></i>
+                    {% if language == 'en' %}Tech Skills{% else %}Habilidades Técnicas{% endif %}
+                </h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 8px;">
+                    {% for category, skills in grouped_skills.items() %}
+                    <div class="skills" style="margin: 0;">
+                        <strong>{{ category | convert_quotes_to_bold | safe }}:</strong>
+                        {% for skill in skills %}
+                            {{ skill | convert_quotes_to_bold | safe }}{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            
+            <!-- Education -->
+            <div class="section" style="page-break-inside: avoid; break-inside: avoid;">
+                <h2 class="section-title">
+                    <i class="fas fa-graduation-cap section-icon"></i>
+                    {% if language == 'en' %}Education{% else %}Educación{% endif %}
+                </h2>
+                {% for edu in data.education %}
+                <div class="education-item" style="page-break-inside: avoid; break-inside: avoid;">
+                    <div class="item-header">
+                        <div class="item-title">{{ edu.degree | convert_quotes_to_bold | safe }} - {{ edu.university | convert_quotes_to_bold | safe }}</div>
+                        <div class="item-subtitle">
+                            <i class="fas fa-map-marker-alt" style="color: #3b82f6; margin-right: 5px;"></i>{{ edu.city | convert_quotes_to_bold | safe }}
+                            <span style="margin: 0 8px;">&nbsp;</span>
+                            <i class="fas fa-calendar-alt" style="color: #3b82f6; margin-right: 5px;"></i>{{ edu.period | convert_quotes_to_bold | safe }}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+            <!-- Languages -->
+            <div class="section" style="page-break-inside: avoid; break-inside: avoid;">
+                <h2 class="section-title">
+                    <i class="fas fa-language section-icon"></i>
+                    {% if language == 'en' %}Languages{% else %}Idiomas{% endif %}
+                </h2>
+                <div class="languages">
+                    {% for lang in data.languages %}
+                    <div class="language-item">
+                        <span><strong>{{ lang.language | convert_quotes_to_bold | safe }}:</strong> {{ lang.level | convert_quotes_to_bold | safe }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            
+            <!-- Footer - Always at bottom of page -->
+            {% if data.footer %}
+            <div class="footer" style="margin-top: 15px; padding-top: 8px; clear: both; display: block;">
+                {{ data.footer | convert_quotes_to_bold | safe }}
+            </div>
+            {% endif %}
+        </div>
+    </body>
+</html>
+

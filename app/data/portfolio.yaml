@@ -1,0 +1,275 @@
+# === INFORMACIÓN PERSONAL ===
+# Datos básicos de identidad y contacto 
+personal_info:
+  name: "Álvaro Andrés Maldonado Pinto"
+  title: "Senior Software Engineer | Product Engineer & AI Specialist"
+  email: "alvaro@almapi.dev"
+  phone: ""  # Se sobrescribe desde la variable de entorno PHONE_NUMBER
+  website: "almapi.dev"
+  linkedin: "@almapidev"
+  github: "@aandmaldonado"
+  
+# === RESUMEN PROFESIONAL ===
+# Resumen corto y detallado del perfil profesional
+professional_summary:
+  short: "Senior Software Engineer experto en IA y Product Engineering. +15 años de experiencia construyendo soluciones de negocio escalables."
+  detailed: |
+    Soy un Ingeniero de Software Senior y Product Engineer con 15 años de experiencia construyendo puentes entre desafíos de negocio complejos y soluciones tecnológicas de alto impacto. Mi misión es simple: utilizar la tecnología para resolver problemas reales.
+    Mi carrera me ha llevado desde roles de desarrollo backend hasta posiciones de liderazgo como Líder Técnico y CTO. Esta trayectoria me enseñó que la mejor tecnología es la que sirve a un propósito claro, lo que me llevó a adoptar una mentalidad de 'Product Engineer': mi prioridad es entender a fondo el 'porqué' del negocio antes de diseñar el 'cómo' técnico.
+    Hoy, mi pasión se centra en la Inteligencia Artificial como un acelerador estratégico para automatizar lo complejo y potenciar la autonomía y productividad de los equipos. Busco aplicar esta visión en un rol estratégico 100% remoto en España, donde pueda liderar iniciativas de IA y arquitectura.
+  philosophy_and_interests:
+    - title: "Filosofía de Trabajo ('Product Engineer')"
+      description: "Mi filosofía se centra en la mentalidad de 'Product Engineer'. Creo que la mejor tecnología nace de un entendimiento profundo del problema de negocio. Mi objetivo no es solo construir software, sino construir la solución correcta que aporte un valor medible y real."
+
+    - title: "Pasión por el Aprendizaje Continuo"
+      description: "Soy un profesional autodidacta por naturaleza. Dedico gran parte de mi tiempo libre al aprendizaje continuo sobre las últimas tendencias en Inteligencia Artificial, investigando nuevas arquitecturas de software y leyendo blogs técnicos para mantenerme siempre a la vanguardia."
+
+    - title: "Resolución de Problemas Complejos"
+      description: "Lo que más me motiva es enfrentarme a problemas que no tienen una solución obvia. Disfruto del proceso de análisis, la colaboración con el equipo y la aplicación de la tecnología para encontrar soluciones creativas a desafíos complejos."
+    
+    - title: "Intereses Personales"
+      description: "Fuera del mundo del código, mi mayor prioridad es mi familia. Disfruto mucho de las actividades al aire libre, ya sea viajando para descubrir nuevos paisajes o simplemente conectando con la naturaleza en una ruta de senderismo. Este balance me permite recargar energías y volver a los desafíos tecnológicos con una perspectiva fresca y renovada."
+
+# === EXPERIENCIA LABORAL ===
+# Estructura simplificada para CV/Cover Letter. Los "achievements" son los bullet points del CV.
+jobs:
+  - company: "InAdvance Consulting Group"
+    role: "Ingeniero de Software Senior | Especialista Integración"
+    duration: "2024 - Presente"
+    location: "Santiago, Chile"
+    description: |
+      Participación clave en un proyecto estratégico de gran escala para el banco BCI: la modernización integral de su plataforma core de procesamiento de tarjetas de crédito. Mi rol se centra en el diseño e implementación de los nuevos microservicios backend y las APIs de integración para migrar un sistema monolítico legacy a una arquitectura moderna.
+    technologies: ["Docker", "Kubernetes", "Arquitectura Hexagonal", "Java", "Spring Boot", "Microservicios", "DevOps", "Agile", "CI/CD", "Testing", "Clean Code", "Jenkins", "SonarQube", "Veracode", "Shift-Left Testing", "Github Actions", "Github", "Spock", "Karate Framework", "Github Copilot", "Dynatrace", "Jira", "Confluence", "Gradle", "API REST", "Postman"]
+    achievements:
+      - "Diseñé e implementé microservicios resilientes con APIs seguras, facilitando la comunicación inter-sistemas."
+      - "Apliqué 'shift-left testing', mejorando calidad y seguridad del código tempranamente."
+      - "Actué como puente Negocio-Tecnología, traduciendo requerimientos financieros complejos."
+    tags: ["industria_bancaria", "tipo_modernizacion", "arquitectura_microservicios", "rol_integracion", "metodologia_agile", "java"]
+
+  - company: "Imagemaker"
+    role: "Ingeniero de Software Senior"
+    duration: "2023 - 2024"
+    location: "Santiago, Chile"
+    description: |
+      Liderazgo técnico y desarrollo de una Prueba de Concepto (PoC) innovadora para el Banco de Chile, utilizando IA (NLP y Visión por Computador/OCR) para automatizar el análisis de documentos legales (PDFs), optimizando la oferta de servicios financieros a PYMEs.
+    technologies: ["Docker", "Kubernetes", "API REST", "Agile", "Oracle Database", "SQL", "IA/ML", "NLP", "Visión por Computador/OCR", "Java", "Spring Boot", "Elasticsearch", "Splunk", "Dynatrace", "Bitbucket", "Bamboo", "Jira", "Confluence", "JPA/Hibernate", "Maven", "Veracode", "SonarQube", "Postman", "Python", "TensorFlow"]
+    achievements:
+      - "Lideré la PoC de IA, definiendo la arquitectura técnica y el enfoque de la solución."
+      - "Implementé microservicios backend robustos (Java/Spring Boot) para orquestar el flujo de IA."
+      - "Implementé monitoreo proactivo (Splunk, Dynatrace) asegurando altos estándares de calidad y reduciendo el downtime potencial."
+    tags: ["industria_bancaria", "tipo_poc", "tipo_innovacion", "ai_ml", "nlp", "computer_vision", "ocr", "java", "python"]
+
+  - company: "Falabella"
+    role: "Líder Técnico"
+    duration: "2022 - 2023"
+    location: "Santiago, Chile"
+    description: |
+      Liderazgo técnico en el desarrollo e implementación de un nuevo sistema corporativo de gestión de asistencia (T&A) para +50.000 empleados. El proyecto implicó la modernización de sistemas legacy y la integración con un proveedor SaaS externo.
+    technologies: ["Arquitectura Hexagonal", "Arquitectura Event-Driven", "DDD", "Microservicios", "GCP", "Agile", "SaaS Integration", "Pub/Sub", "Kafka", "Oracle Database", "SQL", "PL/SQL", "Gitlab", "Jira", "Confluence", "Swagger", "OpenAPI", "Postman", "API First", "API REST", "Java", "Spring Boot"]
+    achievements:
+      - "Lideré la entrega del sistema T&A, optimizando la eficiencia operacional de RRHH a nivel corporativo."
+      - "Impulsé la modernización de la arquitectura aplicando principios de Domain-Driven Design (DDD) y un sistema basado en eventos (Kafka/PubSub)."
+      - "Dirigí con éxito la compleja integración técnica con el proveedor SaaS, colaborando con Product Owners para definir y priorizar el backlog."
+    tags: ["industria_retail", "industria_hr", "tipo_modernizacion", "tipo_integracion", "arquitectura_microservicios", "arquitectura_event_driven", "ddd", "rol_liderazgo", "java"]
+
+  - company: "Neurogenesis IA Technologies"
+    role: "CTO & Co-Fundador | Ingeniero de IA"
+    duration: "2021 - 2022"
+    location: "Barcelona, España"
+    description: |
+      Co-fundación y liderazgo técnico y estratégico de la startup. Como CTO, definí la visión tecnológica, lideré el desarrollo de productos de IA (Visión por Computador y NLP) y orquesté la migración estratégica de toda la infraestructura de la compañía de on-premise a la nube de AWS.
+    technologies: ["Python", "TensorFlow", "PyTorch", "Visión por Computador", "NLP", "Análisis de Documentos", "AWS", "EC2", "S3", "RDS", "Sagemaker", "Rekognition", "Cloud", "DevOps", "CNN", "Deep Learning", "Robótica", "MicroPython", "Trello"]
+    achievements:
+      - "Co-fundé la startup, definí su estrategia tecnológica y el roadmap de producto."
+      - "Lideré la migración completa de la infraestructura on-premise a AWS (EC2, S3, RDS, SageMaker), estableciendo una base escalable para el despliegue de modelos ML."
+      - "Lideré el desarrollo end-to-end de un producto de Visión por Computador (AcuaMattic), desde la creación de un dataset propietario (+10.000 imágenes) hasta un modelo CNN con 92% de precisión."
+      - "Definí el enfoque técnico y análisis de viabilidad para un nuevo producto de IA LegalTech (JuezSW) basado en NLP."
+      - "Logré la integración exitosa de software de IA (Python) con hardware (prototipo robótico Raspberry Pi)."
+      - "Gestioné con éxito grupos multidisciplinarios de estudiantes de máster (IA, DevOps, UX/UI), integrando sus proyectos académicos con el roadmap de la startup."
+    tags: ["industria_ia", "industria_robotica", "industria_legaltech", "tipo_startup", "ai_ml", "computer_vision", "nlp", "python", "aws", "cloud", "devops", "migration", "hardware_raspberry_pi", "rol_liderazgo", "rol_cto", "mentoria"]
+
+  - company: "NTT DATA Europe & LATAM"
+    role: "Ingeniero de Software Senior"
+    duration: "2019 - 2021"
+    location: "Santiago, Chile"
+    description: |
+      Participación como Ingeniero Senior en la modernización integral de los sistemas backoffice core de Transbank, el principal adquirente de pagos de Chile. Mi rol abarcó tanto la migración de la plataforma core (+1M operaciones/día) como el desarrollo de nuevos sistemas (ej. Anulaciones 2.0) para reemplazar flujos manuales.
+    technologies: ["Java", "Spring Boot", "Spring Security", "Spring Batch", "JWT", "Oracle Database", "SQL", "WebLogic", "OWASP", "PCI", "Microservicios", "JPA/Hibernate", "Maven", "SonarQube", "Gitlab", "Jira", "Confluence", "Kiuwan", "Fortify", "API REST", "Postman"]
+    achievements:
+      - "Diseñé e implementé soluciones de alta disponibilidad capaces de gestionar más de 1 millón de transacciones diarias."
+      - "Apliqué con éxito los estándares de seguridad financiera OWASP y PCI en la plataforma core."
+      - "Desarrollé funcionalidades clave para un nuevo sistema de backoffice (Anulaciones 2.0), automatizando un proceso previamente manual."
+      - "Reduje la deuda técnica mediante el establecimiento de estándares de Clean Code y el uso de herramientas SAST."
+    tags: ["industria_bancaria", "tipo_modernizacion", "tipo_desarrollo_nuevo", "arquitectura_microservicios", "rol_senior", "java", "security", "high_availability", "backoffice"]
+
+  - company: "Falabella"
+    role: "Analista TI Senior"
+    duration: "2015 - 2019"
+    location: "Santiago, Chile"
+    description: |
+      Liderazgo técnico y funcional en el desarrollo e integración del Sistema de Personal y Remuneraciones (SPR), una plataforma corporativa clave para unificar la gestión de RRHH de más de 50.000 empleados del Grupo Falabella en varios países.
+    technologies: ["Java", "MVC", "Servicios Web", "Oracle database", "SQL", "PL/SQL", "Gestión de Proyectos", "Integración", "SVN"]
+    achievements:
+      - "Lideré el desarrollo exitoso y la integración de una plataforma corporativa clave para la gestión de RRHH."
+      - "Actué como el principal puente efectivo con stakeholders no técnicos, gestionando requerimientos y expectativas."
+    tags: ["industria_retail", "industria_hr", "tipo_desarrollo_nuevo", "tipo_integracion", "rol_liderazgo_funcional", "java", "project_management"]
+
+  - company: "NTT DATA Europe & LATAM"
+    role: "Analista de Soluciones"
+    duration: "2010 - 2014"
+    location: "Santiago, Chile"
+    description: |
+      Participación clave como desarrollador full-stack en el proyecto de migración y evolución del portal de autogestión de clientes de Movistar Chile, basado en la plataforma IBM WebSphere Portal, mejorando la experiencia del usuario.
+    technologies: ["Java", "IBM WebSphere", "JSP", "SOAP", "HTML", "CSS", "JavaScript", "Portlet Factory", "DAO"]
+    achievements:
+      - "Contribuí directamente a la mejora significativa de la experiencia de usuario y la autonomía del cliente en el portal."
+      - "Desarrollé componentes backend (servicios SOAP) y frontend (portlets JSP) en un entorno complejo de IBM WebSphere."
+    tags: ["industria_telecom", "tipo_migracion", "tipo_evolutivo", "rol_fullstack", "java", "websphere"]
+
+# === HABILIDADES DESTACADAS ===
+# Showcase de habilidades técnicas clave para CV y Cover Letter
+skills_showcase:
+  ai_ml:
+    description: |
+      Mi especialización principal. Uso Python como mi lenguaje principal para todo el ciclo de vida de la IA.
+      Tengo experiencia práctica liderando proyectos de Visión por Computador de extremo a extremo (como AcuaMattic, usando Python con TensorFlow/PyTorch) y desarrollando PoCs de NLP (Motor Facultades).
+    key_technologies: ["Python", "FastAPI", "TensorFlow", "PyTorch", "OpenCV", "Visión por Computador", "NLP", "CNN", "LangChain", "RAG", "LLMs", "Gemini", "HuggingFace", "sentence-transformers"]
+
+  microservices:
+    description: "Amplia experiencia diseñando, implementando y modernizando sistemas con arquitecturas de microservicios en entornos de alta demanda (banca, retail)."
+    key_technologies: ["Java", "Spring Boot", "DDD", "Event-Driven", "API First", "Arquitectura Hexagonal"] 
+
+  java_backend:
+    description: "Más de 15 años de experiencia en el ecosistema Java, construyendo aplicaciones backend robustas, seguras y escalables para grandes empresas."
+    key_technologies: ["Java (8, 11, 17, 21)", "Spring Boot", "JPA/Hibernate", "Maven/Gradle", "JUnit/Mockito/Spock/Karate Framework"] 
+
+  cloud_aws:
+    description: "Experiencia diseñando y gestionando infraestructuras en AWS, incluyendo migraciones y despliegue de aplicaciones y modelos de ML."
+    key_technologies: ["AWS", "EC2", "S3", "RDS", "Lambda", "Sagemaker", "Rekognition"]
+
+  cloud_gcp:
+    description: "Experiencia diseñando y gestionando infraestructuras en GCP, incluyendo despliegue de aplicaciones con IA, chatbots inteligentes y sistemas RAG en producción."
+    key_technologies: ["GCP", "Cloud Run", "Cloud SQL", "Secret Manager", "Cloud Build", "pgvector", "PostgreSQL", "Docker", "CI/CD"]
+
+  technical_leadership:
+    description: "Experiencia demostrada liderando y mentorizando equipos técnicos pequeños (2-4 personas) en roles como Líder Técnico (Falabella) y CTO (Neurogenesis). Mi liderazgo se centra en definir la estrategia tecnológica, guiar a los miembros del equipo y mentorizar talento emergente."
+    key_skills: ["Liderazgo de Equipos", "Mentoría Técnica", "Arquitectura de Software", "Gestión de Proyectos Ágiles", "Comunicación", "Estrategia Tecnológica"] 
+
+  rag_chatbots:
+    description: |
+      Experiencia desarrollando chatbots inteligentes de extremo a extremo usando Python.
+      He implementado arquitecturas RAG (Retrieval Augmented Generation) completas, construyendo el backend y las APIs con Python y FastAPI, y orquestando los flujos de LLMs con LangChain.
+    key_technologies: ["Python", "FastAPI", "RAG", "LLMs", "Gemini", "LangChain", "PostgreSQL", "pgvector", "HuggingFace", "sentence-transformers", "Docker", "Google Cloud Run"] 
+
+# === EDUCACIÓN ===
+# Lista completa de estudios principales con grados, instituciones, períodos y conocimientos adquiridos
+education:
+  - degree: "AI4DEVS"
+    institution: "LIDR.co | AI-Powered Careers"
+    period: "2025"
+    details: |
+      Programa avanzado de IA aplicada con un proyecto de titulación: "AI Resume Agent". 
+      El proyecto consistió en el desarrollo de un chatbot inteligente y agente de currículum personalizado utilizando una arquitectura RAG completa.
+    knowledge_acquired:
+      - "Aplicación estratégica y práctica de la IA en todo el ciclo de vida del desarrollo de software (SDLC)."
+      - "Implementación de arquitectura RAG end-to-end con vectorización semántica (pgvector, HuggingFace)."
+      - "Despliegue automatizado de aplicaciones de IA en Google Cloud (Cloud Run, Cloud SQL) con CI/CD."
+      - "Optimización de parámetros de LLMs (Gemini 2.5 Flash) y creación de sistemas de memoria conversacional."
+      - "Desarrollo de sistemas de chunks enriquecidos (Hyper-Enrichment v2) para mejorar la precisión semántica."
+      - "Uso avanzado de asistentes de IA (GitHub Copilot) y principios de Prompt Engineering."
+    tools_technologies: [
+        "Python", "FastAPI", "RAG", "LLMs", "Gemini 2.5 Flash", "LangChain", 
+        "PostgreSQL", "pgvector", "Docker", "Google Cloud Run", "Cloud SQL", 
+        "Secret Manager", "Cloud Build", "CI/CD", "HuggingFace", "sentence-transformers",
+        "GitHub Copilot", "ChatGPT", "Cursor", "Prompt Engineering"
+      ]
+
+  - degree: "Máster en Inteligencia Artificial"
+    institution: "Universitat Politècnica de Catalunya"
+    period: "2020 - 2021"
+    details: "Proyecto final 'AcuaMattic' reconocido como 'Mejor Proyecto de la Promoción', sentando las bases para mi rol como CTO."
+    knowledge_acquired:
+      - "Dominio de fundamentos teóricos y matemáticos de la IA (estadística, álgebra lineal)."
+      - "Experiencia práctica en Machine Learning supervisado, no supervisado y por refuerzo."
+      - "Profundización en Deep Learning: Redes Neuronales Convolucionales (CNNs), Recurrentes (RNNs)."
+      - "Especialización en Visión por Computador y Procesamiento del Lenguaje Natural (NLP)."
+      - "Gestión e implementación de proyectos de IA complejos de extremo a extremo."
+    tools_technologies: ["Python", "TensorFlow", "Keras", "PyTorch", "Scikit-learn", "OpenCV", "NLTK", "spaCy"]
+
+  - degree: "Ingeniería Civil en Informática"
+    institution: "Universidad de Santiago de Chile"
+    period: "2012 - 2017"
+    details: "Reconocido como 'Mejor Alumno de la Promoción'."
+    knowledge_acquired:
+      - "Sólida formación en Ciencias de la Computación (algoritmos, estructuras de datos, sistemas operativos)."
+      - "Principios de Ingeniería de Software y Arquitectura de Software."
+      - "Gestión de Proyectos de TI (metodologías tradicionales y ágiles)."
+      - "Diseño y administración de bases de datos relacionales."
+      - "Fundamentos de redes y comunicaciones."
+    tools_technologies: ["Java", "C++", "SQL", "UML", "Design Patterns", "Project Management tools"]
+
+# === HABILIDADES ===
+# Habilidades técnicas destacadas (Nivel Superior)
+skills: 
+  - category: "Lenguajes y Frameworks Principales"
+    items: ["Java", "Spring Boot", "Python", "FastAPI", "JPA/Hibernate", "JavaScript"]
+  - category: "IA/ML y GenAI"
+    items: ["RAG", "LLMs", "LangChain", "TensorFlow/PyTorch", "HuggingFace", "Visión por Computador", "NLP"]
+  - category: "Infraestructura Cloud y DevOps"
+    items: ["AWS", "GCP", "Docker", "Kubernetes", "CI/CD", "Jenkins", "GitHub Actions", "Elasticsearch"]
+  - category: "Bases de Datos y Almacenamiento"
+    items: ["SQL", "Oracle", "PostgreSQL", "pgvector", "MongoDB"]
+  - category: "Pruebas y Calidad de Código"
+    items: ["JUnit", "Spock/Karate", "SonarQube", "Veracode", "TDD", "Shift-Left Testing"]
+  - category: "Metodologías y Herramientas Ágiles"
+    items: ["Agile", "Scrum", "Git", "Maven/Gradle", "Jira", "OpenAPI/Swagger"]
+  - category: "Desarrollo Asistido por IA"  
+    items: ["GitHub Copilot", "ChatGPT", "Cursor", "Prompt Engineering"]
+
+# === IDIOMAS ===
+# Idiomas que manejo con nivel de competencia
+languages:
+  - name: "Español"
+    level: "Nativo"
+  - name: "Inglés"
+    level: "Competencia Profesional (B2)"
+
+# === PERFILES DE HABILIDADES PARA CV ===
+# Grupos de habilidades pre-definidos y optimizados para diferentes tipos de ofertas
+cv_skill_profiles:
+  
+  # Perfil 1: Cuando la oferta es 100% IA (ej. Kairós, Capgemini IA)
+  ia_specialist:
+    - category: "IA/ML y GenAI"
+      items: ["RAG / LLMs", "LangChain", "Python", "FastAPI", "Visión por Computador", "TensorFlow/PyTorch", "HuggingFace", "NLP"]
+    - category: "Infraestructura Cloud (IA)"
+      items: ["AWS (SageMaker, S3)", "GCP (Cloud Run, Cloud SQL)", "Docker", "pgvector"]
+    - category: "Desarrollo Asistido por IA"
+      items: ["GitHub Copilot", "Cursor", "Prompt Engineering"]
+      
+  # Perfil 2: Cuando la oferta es 100% Backend Java (ej. Mercadona, Devoteam)
+  java_backend_architect:
+    - category: "Arquitectura y Backend"
+      items: ["Java (17+)", "Spring Boot", "Microservicios", "Arquitectura Hexagonal", "DDD", "Event-Driven"]
+    - category: "Bases de Datos y DevOps"
+      items: ["SQL (Oracle, PostgreSQL)", "JPA/Hibernate", "Jenkins", "Docker", "Kubernetes", "CI/CD"]
+    - category: "Pruebas y Calidad"
+      items: ["JUnit", "Spock/Karate", "SonarQube", "TDD"]
+      
+  # Perfil 3: Cuando la oferta es híbrida (IA + Java) (ej. B. de Chile)
+  hybrid_ai_java:
+    - category: "Lenguajes Principales"
+      items: ["Java", "Spring Boot", "Python", "FastAPI"]
+    - category: "IA/ML y GenAI"
+      items: ["RAG / LLMs", "LangChain", "Visión por Computador", "NLP"]
+    - category: "Arquitectura y Cloud"
+      items: ["Microservicios", "AWS", "GCP", "Docker", "Kubernetes", "Jenkins"]
+
+  # Perfil 4: Cuando la oferta es de Liderazgo (Tech Lead, CTO)
+  technical_leader:
+    - category: "Liderazgo y Estrategia"
+      items: ["Liderazgo de Equipos", "Arquitectura de Software", "Estrategia Tecnológica", "Mentoría Técnica"]
+    - category: "Gestión y Metodologías"
+      items: ["Agile/Scrum", "Jira/Confluence", "Gestión de Proyectos", "Comunicación con Stakeholders"]
+    - category: "Tecnologías Clave"
+      items: ["IA/ML", "Java/Spring", "AWS/GCP", "Microservicios"]

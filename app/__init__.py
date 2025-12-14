@@ -1,0 +1,2 @@
+"""CV Generator FastAPI Application."""
+

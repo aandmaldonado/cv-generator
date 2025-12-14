@@ -1,0 +1,2 @@
+"""Tests for CV Generator."""
+

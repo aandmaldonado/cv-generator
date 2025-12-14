@@ -1,0 +1,248 @@
+fullName: "Álvaro Andrés Maldonado Pinto"
+degree: "Senior Software Engineer | AI Engineer"
+contact:
+  email: "alvaro@almapi.dev"
+  portfolio: "almapi.dev"
+  linkedin: "@almapidev"
+  github: "@aandmaldonado"
+  phone: "+34 641 962 396"
+
+profile: "Ingeniero de Software Senior & Especialista en IA con +15 años de experiencia y mentalidad de Product Engineer. Fusiono una sólida trayectoria en arquitectura de sistemas (Java, Spring, Microservicios) con soluciones avanzadas de Inteligencia Artificial. Experto en cerrar la brecha entre la ingeniería robusta y la innovación, diseñando sistemas escalables que resuelven problemas de negocio complejos. Apasionado por la mentoría técnica y la adopción de tecnologías emergentes para maximizar la eficiencia operativa."
+
+keySkills:
+  - "Arquitectura de Software"
+  - "Desarrollo con IA"
+  - "Ingeniería de Producto"
+  - "Liderazgo Técnico"
+  - "Resolución de Problemas Complejos"
+  - "Pensamiento Estratégico"
+  - "Adaptabilidad"
+  - "Aprendizaje Continuo"
+
+experience:
+  - role: "Ingeniero de Software Senior"
+    company: "InAdvance Consulting Group"
+    city: "Santiago, Chile"
+    period: "2024 - Presente"
+    bullets:
+      - "Lideré la modernización y migración crítica del sistema procesador de tarjetas de crédito, transformando operaciones batch a procesos online y optimizando la arquitectura de microservicios, lo que redujo significativamente los tiempos de respuesta y los costos operativos."
+      - "Aceleré la entrega de valor implementando CI/CD y Trunk Based Development con estrategias de Shift-Left Testing, logrando una disminución de incidentes críticos y una resolución proactiva mediante observabilidad End-to-End."
+      - "Aseguré la alineación estratégica traduciendo requerimientos financieros complejos en especificaciones técnicas inequívocas, mejorando la comunicación entre equipos y eliminando ambigüedades técnicas que ponían en riesgo los objetivos del negocio."
+    technologies:
+      - "Java"
+      - "Spring Boot"
+      - "Microservicios"
+      - "DevOps"
+      - "Agile"
+      - "CI/CD"
+      - "Testing"
+      - "Arquitectura Hexagonal"
+      - "Dynatrace"
+
+  - role: "Ingeniero de Software Senior"
+    company: "Imagemaker"
+    city: "Santiago, Chile"
+    period: "2023 - 2024"
+    bullets:
+      - "Revolucioné la toma de decisiones en servicios PYME liderando una PoC de IA que automatizó el análisis legal mediante NLP y Visión por Computador, reduciendo drásticamente el tiempo de procesamiento manual de días a segundos."
+      - "Fortalecí la robustez del ecosistema digital diseñando microservicios bajo estándares Cloud-Native, integrando revisiones de código automatizadas para garantizar mantenibilidad."
+      - "Maximicé la confiabilidad del sistema implementando soluciones de observabilidad proactiva, disminuyendo drásticamente el tiempo de inactividad y mejorando la experiencia del cliente."
+    technologies:
+      - "Java"
+      - "Spring Boot"
+      - "OCR"
+      - "NLP"
+      - "Oracle DB"
+      - "JPA/Hibernate"
+      - "Elasticsearch"
+
+  - role: "Líder Técnico"
+    company: "Falabella"
+    city: "Santiago, Chile"
+    period: "2022-2023"
+    bullets:
+      - "Optimicé la eficiencia operativa regional liderando la entrega end-to-end de un sistema de gestión de asistencia multi-país (Chile, Colombia, Perú), impactando a +50.000 empleados y coordinando equipos técnicos y de negocio."
+      - "Impulsé la modernización tecnológica aplicando Domain-Driven Design (DDD) y Patrón SAGA en arquitecturas Event-Driven para desacoplar y escalar sistemas core complejos."
+      - "Garanticé integraciones SaaS exitosas liderando la estrategia técnica con proveedores externos y definiendo contratos de API alineados con los objetivos corporativos."
+    technologies:
+      - "Microservicios"
+      - "GCP"
+      - "Kafka"
+      - "Agile"
+      - "Arquitectura Hexagonal"
+      - "Oracle DB"
+      - "Swagger/OpenAPI"
+      - "API-First"
+
+  - role: "CTO & Co-Fundador | Ingeniero de IA"
+    company: "Neurogenesis IA Technologies"
+    city: "Barcelona, España"
+    period: "2021 - 2022"
+    bullets:
+      - "Cofundé y estructuré la compañía, definiendo la visión tecnológica y la estrategia de producto desde la constitución legal hasta el lanzamiento al mercado."
+      - "Desarrollé un sistema de IA integral para la clasificación de peces ornamentales, logrando un 92% de precisión en modelos CNN mediante la creación de datasets propios (+10k imágenes)."
+      - "Habilité la escalabilidad de productos de IA diseñando una infraestructura Cloud-Native en AWS, sentando las bases para el despliegue eficiente de modelos de Machine Learning."
+      - "Diversifiqué el portafolio de innovación desarrollando prototipos de NLP y chatbots productivos, expandiendo la oferta de valor de la empresa."
+      - "Fomenté el talento tecnológico mentorizando proyectos académicos de posgrado en IA y Cloud, fortaleciendo el vínculo entre la industria y la academia."
+    technologies:
+      - "Python"
+      - "TensorFlow"
+      - "Visión por Computador"
+      - "NLP"
+      - "AWS"
+      - "CNN"
+      - "Deep Learning"
+      - "Micropython"
+      - "Raspberry Pi"
+
+  - role: "Ingeniero de Software Senior"
+    company: "NTT DATA Europe & LATAM"
+    city: "Santiago, Chile"
+    period: "2019 - 2021"
+    bullets:
+      - "Lideré la modernización crítica de sistemas de backoffice, mejorando sustancialmente la mantenibilidad y el rendimiento de la plataforma core bancaria."
+      - "Diseñé soluciones de alta concurrencia gestionando +1 millón de transacciones diarias, implementando estrictos estándares de seguridad financiera (OWASP, PCI) y autenticación JWT."
+      - "Reduje la deuda técnica estableciendo estándares de calidad de código y utilizando herramientas de análisis estático como referente técnico del equipo."
+    technologies:
+      - "Java"
+      - "Spring Boot"
+      - "Spring Security"
+      - "Spring Batch"
+      - "JWT"
+      - "Oracle DB"
+      - "WebLogic"
+      - "SonarQube"
+      - "JPA/Hibernate"
+      - "Fortify"
+      - "Kiuwan"
+      
+
+  - role: "Analista TI Senior"
+    company: "Falabella"
+    city: "Santiago, Chile"
+    period: "2015 - 2019"
+    bullets:
+      - "Unifiqué la gestión de RRHH para +50.000 empleados liderando el desarrollo del Sistema de Personal y Remuneraciones centralizando procesos críticos del grupo."
+      - "Traduje necesidades de negocio en soluciones técnicas, actuando como punto de contacto principal y asegurando que el software entregado cumpliera con los objetivos estratégicos de los stakeholders."
+    technologies:
+      - "Java"
+      - "MVC"
+      - "Servicios Web"
+      - "Oracle DB"
+      - "PL/SQL"
+
+  - role: "Analista de Soluciones"
+    company: "NTT DATA Europe & LATAM"
+    city: "Santiago, Chile"
+    period: "2010 - 2014"
+    bullets:
+      - "Mejoré la experiencia digital del cliente contribuyendo a la migración del portal de Movistar Chile (IBM WebSphere), desarrollando componentes full-stack que optimizaron la interacción del usuario."
+    technologies:
+      - "Java"
+      - "WebSphere Portal"
+      - "WebServices"
+      - "Oracle DB"
+      - "JSP"
+      - "HTML"
+      - "CSS"
+      - "JavaScript"
+
+techSkills:
+  - category: "Lenguajes y Frameworks Principales"
+    skills:
+      - "Java"
+      - "Spring Boot"
+      - "Python"
+      - "FastAPI"
+      - "JavaScript"
+      - "React"
+
+  - category: "IA / ML"
+    skills:
+      - "TensorFlow"
+      - "Pytorch"
+      - "SciKit-Learn"
+      - "OpenCV"
+      - "LangChain"
+      - "HuggingFace"
+      - "OpenAI API"
+      - "GenAI"
+      - "LLM"
+      - "RAG"
+
+  - category: "Infraestructura Cloud y DevOps"
+    skills:
+      - "AWS"
+      - "GCP"
+      - "Docker"
+      - "Kubernetes"
+      - "Jenkins"
+      - "GitHub Actions"
+      - "Splunk"
+      - "Dynatrace"
+      - "Elasticsearch"
+
+  - category: "Bases de Datos y Almacenamiento"
+    skills:
+      - "PL/SQL"
+      - "Oracle DB"
+      - "MySQL"
+      - "PostgreSQL"
+      - "MongoDB"
+      - "JPA/Hibernate"
+
+  - category: "Pruebas y Calidad de Código"
+    skills:
+      - "JUnit"
+      - "Mockito"
+      - "Spock"
+      - "Karate"
+      - "ArchUnit"
+      - "Sonar"
+      - "Veracode"
+      - "Checkstyle"
+
+  - category: "Metodologías y Gestión Ágil"
+    skills:
+      - "Agile"
+      - "Scrum"
+      - "Jira"
+      - "Confluence"
+      - "Trello"
+
+  - category: "Desarrollo Asistido por IA"
+    skills:
+      - "GitHub Copilot"
+      - "Cursor"
+      - "Prompt Engineering"
+
+  - category: "Herramientas de Desarrollo y Control de Versiones"
+    skills:
+      - "Git (GitHub, GitLab, Bitbucket)"
+      - "Maven/Gradle"
+      - "OpenAPI/Swagger"
+
+education:
+  - degree: "AI4DEVS"
+    university: "LIDR.co | AI-Powered Careers"
+    city: "España"
+    period: "2025"
+
+  - degree: "Máster en Inteligencia Artificial"
+    university: "Universitat Politècnica de Catalunya"
+    city: "España"
+    period: "2020 - 2021"
+
+  - degree: "Ingeniería Civil en Informática"
+    university: "Universidad de Santiago de Chile"
+    city: "Chile"
+    period: "2012 - 2017"
+
+languages:
+  - language: "Español"
+    level: "Nativo"
+
+  - language: "Inglés"
+    level: "B2"
+
+footer: ""

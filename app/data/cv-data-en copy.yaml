@@ -1,0 +1,247 @@
+fullName: "Álvaro Andrés Maldonado Pinto"
+degree: "Senior Software Engineer | AI Engineer"
+contact:
+  email: "alvaro@almapi.dev"
+  portfolio: "almapi.dev"
+  linkedin: "@almapidev"
+  github: "@aandmaldonado"
+  phone: "+34 641 962 396"
+
+profile: "Senior Software Engineer & AI Specialist with +15 years of experience and a Product Engineer mindset. I merge a solid background in system architecture (Java, Spring, Microservices) with advanced Artificial Intelligence solutions. Expert in bridging the gap between robust engineering and innovation, designing scalable systems that solve complex business problems. Passionate about technical mentorship and adopting emerging technologies to maximize operational efficiency."
+
+keySkills:
+  - "Software Architecture"
+  - "AI Development"
+  - "Product Engineering"
+  - "Technical Leadership"
+  - "Complex Problem Solving"
+  - "Strategic Thinking"
+  - "Adaptability"
+  - "Continuous Learning"
+
+experience:
+  - role: "Senior Software Engineer"
+    company: "InAdvance Consulting Group"
+    city: "Santiago, Chile"
+    period: "2024 - Present"
+    bullets:
+      - "Led the critical modernization and migration of the credit card processing system, transforming batch operations into online processes and optimizing microservices architecture, which significantly reduced response times and operational costs."
+      - "Accelerated value delivery by implementing CI/CD and Trunk Based Development with Shift-Left Testing strategies, achieving a reduction in critical incidents and proactive resolution through End-to-End observability."
+      - "Ensured strategic alignment by translating complex financial requirements into unequivocal technical specifications, improving cross-team communication and eliminating technical ambiguities that risked business objectives."
+    technologies:
+      - "Java"
+      - "Spring Boot"
+      - "Microservices"
+      - "DevOps"
+      - "Agile"
+      - "CI/CD"
+      - "Testing"
+      - "Hexagonal Architecture"
+      - "Dynatrace"
+
+  - role: "Senior Software Engineer"
+    company: "Imagemaker"
+    city: "Santiago, Chile"
+    period: "2023 - 2024"
+    bullets:
+      - "Revolutionized decision-making for SME services by leading an AI PoC that automated legal analysis using NLP and Computer Vision, drastically reducing manual processing time from days to seconds."
+      - "Strengthened digital ecosystem robustness by designing microservices under Cloud-Native standards, integrating automated code reviews to ensure maintainability."
+      - "Maximized system reliability by implementing proactive observability solutions, drastically decreasing downtime and improving customer experience."
+    technologies:
+      - "Java"
+      - "Spring Boot"
+      - "OCR"
+      - "NLP"
+      - "Oracle DB"
+      - "JPA/Hibernate"
+      - "Elasticsearch"
+
+  - role: "Technical Lead"
+    company: "Falabella"
+    city: "Santiago, Chile"
+    period: "2022-2023"
+    bullets:
+      - "Optimized regional operational efficiency by leading the end-to-end delivery of a multi-country attendance management system (Chile, Colombia, Peru), impacting +50,000 employees and coordinating technical and business teams."
+      - "Drove technological modernization by applying Domain-Driven Design (DDD) and SAGA Pattern in Event-Driven architectures to decouple and scale complex core systems."
+      - "Guaranteed successful SaaS integrations by leading the technical strategy with external vendors and defining API contracts aligned with corporate objectives."
+    technologies:
+      - "Microservices"
+      - "GCP"
+      - "Kafka"
+      - "Agile"
+      - "Hexagonal Architecture"
+      - "Oracle DB"
+      - "Swagger/OpenAPI"
+      - "API-First"
+
+  - role: "CTO & Co-Founder | AI Engineer"
+    company: "Neurogenesis IA Technologies"
+    city: "Barcelona, Spain"
+    period: "2021 - 2022"
+    bullets:
+      - "Co-founded and structured the company, defining the technological vision and product strategy from legal incorporation to market launch."
+      - "Developed an integral AI system for ornamental fish classification, achieving 92% accuracy in CNN models by creating proprietary datasets (+10k images)."
+      - "Enabled AI product scalability by designing a Cloud-Native infrastructure on AWS, laying the foundations for efficient Machine Learning model deployment."
+      - "Diversified the innovation portfolio by developing NLP prototypes and productive chatbots, expanding the company's value proposition."
+      - "Fostered technical talent by mentoring postgraduate academic projects in AI and Cloud, strengthening the link between industry and academia."
+    technologies:
+      - "Python"
+      - "TensorFlow"
+      - "Computer Vision"
+      - "NLP"
+      - "AWS"
+      - "CNN"
+      - "Deep Learning"
+      - "Micropython"
+      - "Raspberry Pi"
+
+  - role: "Senior Software Engineer"
+    company: "NTT DATA Europe & LATAM"
+    city: "Santiago, Chile"
+    period: "2019 - 2021"
+    bullets:
+      - "Led the critical modernization of back-office systems, substantially improving the maintainability and performance of the core banking platform."
+      - "Designed high-concurrency solutions managing +1 million daily transactions, implementing strict financial security standards (OWASP, PCI) and JWT authentication."
+      - "Reduced technical debt by establishing code quality standards and using static analysis tools as the team's technical reference."
+    technologies:
+      - "Java"
+      - "Spring Boot"
+      - "Spring Security"
+      - "Spring Batch"
+      - "JWT"
+      - "Oracle DB"
+      - "WebLogic"
+      - "SonarQube"
+      - "JPA/Hibernate"
+      - "Fortify"
+      - "Kiuwan"
+
+  - role: "Senior IT Analyst"
+    company: "Falabella"
+    city: "Santiago, Chile"
+    period: "2015 - 2019"
+    bullets:
+      - "Unified HR management for +50,000 employees by leading the development of the 'Personnel and Remuneration System', centralizing critical group processes."
+      - "Translated business needs into technical solutions, acting as the main point of contact and ensuring delivered software met stakeholders' strategic objectives."
+    technologies:
+      - "Java"
+      - "MVC"
+      - "Web Services"
+      - "Oracle DB"
+      - "PL/SQL"
+
+  - role: "Solutions Analyst"
+    company: "NTT DATA Europe & LATAM"
+    city: "Santiago, Chile"
+    period: "2010 - 2014"
+    bullets:
+      - "Improved customer digital experience by contributing to the Movistar Chile portal migration (IBM WebSphere), developing full-stack components that optimized user interaction."
+    technologies:
+      - "Java"
+      - "WebSphere Portal"
+      - "WebServices"
+      - "Oracle DB"
+      - "JSP"
+      - "HTML"
+      - "CSS"
+      - "JavaScript"
+
+techSkills:
+  - category: "Core Languages & Frameworks"
+    skills:
+      - "Java"
+      - "Spring Boot"
+      - "Python"
+      - "FastAPI"
+      - "JavaScript"
+      - "React"
+
+  - category: "AI / ML"
+    skills:
+      - "TensorFlow"
+      - "Pytorch"
+      - "SciKit-Learn"
+      - "OpenCV"
+      - "LangChain"
+      - "HuggingFace"
+      - "OpenAI API"
+      - "GenAI"
+      - "LLM"
+      - "RAG"
+
+  - category: "Cloud Infrastructure & DevOps"
+    skills:
+      - "AWS"
+      - "GCP"
+      - "Docker"
+      - "Kubernetes"
+      - "Jenkins"
+      - "GitHub Actions"
+      - "Splunk"
+      - "Dynatrace"
+      - "Elasticsearch"
+
+  - category: "Databases & Storage"
+    skills:
+      - "PL/SQL"
+      - "Oracle DB"
+      - "MySQL"
+      - "PostgreSQL"
+      - "MongoDB"
+      - "JPA/Hibernate"
+
+  - category: "Testing & Code Quality"
+    skills:
+      - "JUnit"
+      - "Mockito"
+      - "Spock"
+      - "Karate"
+      - "ArchUnit"
+      - "Sonar"
+      - "Veracode"
+      - "Checkstyle"
+
+  - category: "Agile Methodologies & Management"
+    skills:
+      - "Agile"
+      - "Scrum"
+      - "Jira"
+      - "Confluence"
+      - "Trello"
+
+  - category: "AI-Assisted Development"
+    skills:
+      - "GitHub Copilot"
+      - "Cursor"
+      - "Prompt Engineering"
+
+  - category: "Development Tools & Version Control"
+    skills:
+      - "Git (GitHub, GitLab, Bitbucket)"
+      - "Maven/Gradle"
+      - "OpenAPI/Swagger"
+
+education:
+  - degree: "AI4DEVS"
+    university: "LIDR.co | AI-Powered Careers"
+    city: "Spain"
+    period: "2025"
+
+  - degree: "Master in Artificial Intelligence"
+    university: "Universitat Politècnica de Catalunya"
+    city: "Spain"
+    period: "2020 - 2021"
+
+  - degree: "Computer Science Engineering"
+    university: "Universidad de Santiago de Chile"
+    city: "Chile"
+    period: "2012 - 2017"
+
+languages:
+  - language: "Spanish"
+    level: "Native"
+
+  - language: "English"
+    level: "B2"
+
+footer: ""
